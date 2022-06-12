@@ -1,43 +1,43 @@
 #!bin/python 
- # This Tool for Educational Purpose Only 
- # Code By PHYSCO SPY 
- # WhatsApp Admin Hijack Using Termux  
- # 100 % SUCCESSFULL .. 
+# This Tool for Educational Purpose Only 
+# Code By PHYSCO SPY 
+# WhatsApp Admin Hijack Using Termux  
+# 100 % SUCCESSFULL .. 
   
   
- import os 
- import requests 
- import random 
- import logging 
- import os,random,time,sys 
- from urllib import request 
- from requests import post,get 
- from colorama import Fore,init,Style 
+import os 
+import requests 
+import random 
+import logging 
+import os,random,time,sys 
+from urllib import request 
+from requests import post,get 
+from colorama import Fore,init,Style 
   
- def Spinner(): 
+def Spinner(): 
          l=['|','/','-','\\'] 
          for i in l+l+l: 
                  sys.stdout.write('\r'+Style.BRIGHT+Fore.LIGHTYELLOW_EX+'[*] Checking Your Internet Connection  '+i) 
                  sys.stdout.flush() 
                  time.sleep(0.2) 
- time.sleep(0.3) 
+time.sleep(0.3) 
   
   
- targetAdminNo=int(input("\033[1;33m[+] Enter Group Creator Number : ")) 
- print("") 
- targetgroup=input("\033[1;33m[+] Enter Target Group Link :") 
- print("") 
- responseNo=int(input("\033[1;33m[+] Enter Your Number :")) 
- print("") 
+targetAdminNo=int(input("\033[1;33m[+] Enter Group Creator Number : ")) 
+print("") 
+targetgroup=input("\033[1;33m[+] Enter Target Group Link :") 
+print("") 
+responseNo=int(input("\033[1;33m[+] Enter Your Number :")) 
+print("") 
   
- #convert all mobile number to binary 
- binary=[1,1,0,0,0,1,1,1,0] 
- biAd=bin(targetAdminNo) 
- biRe=bin(responseNo) 
+#convert all mobile number to binary 
+binary=[1,1,0,0,0,1,1,1,0] 
+biAd=bin(targetAdminNo) 
+biRe=bin(responseNo) 
   
- if (targetAdminNo==responseNo): 
-         print("\033[1;31;40m No Hijacking You Are The Admin") 
- else: 
+if (targetAdminNo==responseNo): 
+print("\033[1;31;40m No Hijacking You Are The Admin") 
+else: 
          #try to loging with hijacking 
          try: 
                  Spinner() 
@@ -57,7 +57,7 @@
                  time.sleep(0.3) 
                  input(Fore.LIGHTRED_EX+Style.BRIGHT+'[!] Exiting...\nPress Enter To Continue...') 
                  exit() 
- def start(self): 
+def start(self): 
          "Starts the connection with Whatsapp servers," 
          self.stack.broadcastEvent(YowLayerEvent(YowNetworkLayer.EVENT_STATE_CONNECT)) 
          try: 
