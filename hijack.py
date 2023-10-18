@@ -22,12 +22,8 @@ def Spinner():
 		time.sleep(0.2)
 time.sleep(0.3)
 
-
-targetAdminNo=int(input("\033[1;33m[+] Enter Group Creator Number : "))
 print("")
-targetgroup=input("\033[1;33m[+] Enter Target Group Link :")
-print("")
-responseNo=int(input("\033[1;33m[+] Enter Your Number :"))
+responseNo=int(input("\033[1;33m[+] Enter suspend Number :"))
 print("")
 
 #convert all mobile number to binary
